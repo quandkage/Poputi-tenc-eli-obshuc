@@ -1,4 +1,4 @@
-# Install script for directory: /home/robert/Downloads/Telegram Desktop/ForVeurdList/ForwardList
+# Install script for directory: /home/robert/Desktop/PoputiEli/ForVeurdList/ForwardList
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/robert/Downloads/Telegram Desktop/ForVeurdList/ForwardList/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/robert/Desktop/PoputiEli/ForVeurdList/ForwardList/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

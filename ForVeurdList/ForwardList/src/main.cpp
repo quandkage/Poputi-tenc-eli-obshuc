@@ -47,9 +47,35 @@ int main()
     }
     std::cout << "----------------" << std::endl;
     std::cout << "Test 3" << std::endl;
+    ForwardList<int> list1 = {1, 2, 3, 4, 3, 5};
+    ListNode<int>* newHead1 = removeElements(list1.head_node(), 3);
+    std::cout << "After removing 3: ";
+    for (ListNode<int>* curr = newHead1; curr; curr = curr->next) {
+        std::cout << *(curr->data) << " ";
+    }
+    std::cout << std::endl;
     std::cout << "----------------" << std::endl;
     std::cout << "Test 4" << std::endl;
-    ForwardList<int> test4 = {1,2,2,1};
-    std::cout << "Does List Palindrome ? -> " << (isPalindrome(test4.head_node()) ? "ture" : "false") << std::endl;
+    ForwardList<int> list3 = {1, 1, 2, 3, 3, 4,4,5,5,6,6,7,7,8,8,9,9,10};
+    ListNode<int>* newHead3 = removeDuplicates(list3.head_node());
+    std::cout << "After removing duplicates : ";
+    for (ListNode<int>* curr = newHead3; curr; curr = curr->next) {
+        std::cout << *(curr->data) << " ";
+    }
+    std::cout << std::endl;
+    std::cout << "----------------" << std::endl;
+    std::cout << "Test 5" << std::endl;
+    ForwardList<int> list5 = {1, 2, 3, 2, 1};
+    std::cout << "Is {1, 2, 3, 2, 1} a palindrome? -> " << (isPalindrome(list5.head_node()) ? "true" : "false") << std::endl;
+    std::cout << "----------------" << std::endl;
+    std::cout << "Test 6" << std::endl;
+    ForwardList<int> list6 = {1, 2, 3, 4, 5};
+    reorderList(list6.head_node());
+    std::cout << "After reordering : ";
+    for (ListNode<int>* curr = list6.head_node(); curr; curr = curr->next) {
+        std::cout << *(curr->data) << " ";
+    }
+    std::cout << std::endl;
+    std::cout << "----------------" << std::endl;
     return 0;
 }
